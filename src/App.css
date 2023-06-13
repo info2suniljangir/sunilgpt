@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+* {
+  color: #ffff;
+  font-family: 'Open Sans', sans-serif;
+}
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+
+}
+
+.app {
+  background-color: #343541;
+  display: flex;
+}
+
+
+.side-bar {
+  background-color: #202123;
+  height: 100vh;
+  width: 244px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+
+button {
+  border: .5px;
+  border-style: solid;
+  border-color: rgba(255, 255,255, 0.5);
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+nav {
+  border-top: solid 0.5px rgba(255, 255, 255 0.5);
+  padding: 10px;
+  margin: 10px;
+}
+
+.history {
+  padding: 10px;
+  margin: 10px;
+  height: 100%;
+}
+
+li {
+  list-style-type: none;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.info {
+  color: rgba(255, 255, 255 0.5);
+  font-size: 11px;
+  padding: 10px;
+}
+
+.bottom-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+  max-width: 650px;
+  /* padding: 12px 15px; */
+}
+
+input {
+  width: 100%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.05);
+  font-size: 20px;
+  padding: 12px 15px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 55px 55px,
+              rgba(0, 0, 0, 0.05) 0 -12px 30px,
+              rgba(0, 0, 0, 0.05) 0 4px 6px,
+              rgba(0, 0, 0, 0.05) 0 12px 3px,
+              rgba(0, 0, 0, 0.05) 0 -3px 5px;
+}
+
+input:focus {
+  outline: none;
+}
+
+#submit {
+  font-size: 30px;
+  position: absolute;
+  top: 5px;
+  right: -10px;
+  cursor: pointer;
+}
+
+.feed {
+  overflow: scroll;
+  width: 100%;
+  padding: 0px;
+ 
+}
+
+.feed li {
+  display: flex;
+  background-color: #444654;
+  width: 100%;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.feed {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  text-align: left;
+}
+
+.feed p.role{
+  min-width: 100px;
+}
+
+
+.feed::-webkit-scrollbar {
+  width: 0em;
+  background-color: transparent;
+}
+
+.feed::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.feed::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.feed::-webkit-scrollbar-thumb:hover {
+  background-color: transparent;
+}
+
+#scrollDownBtn {
+  border: 2px solid white;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -20px;
+  right: -200px;
+  padding: 2px;
+
+}
